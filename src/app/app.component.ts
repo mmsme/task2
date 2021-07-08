@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TextDirectionController } from './common/TextDirectionController';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'trans-demo';
+  public textDirection = new TextDirectionController();
 }

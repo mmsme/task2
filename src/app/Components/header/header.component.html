@@ -1,0 +1,20 @@
+<nav id="myNav" class="navbar navbar-expand-sm navbar-dark  sticky-top  bg-dark">
+    <a class="navbar-brand" href="#">{{"navbar" | translate}}</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav d-flex mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">{{"home"| translate}} <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">{{"link" | translate}}</a>
+            </li>
+            <li class="nav-item" style="cursor: pointer;" (click)="changeLang()">
+                <a class="nav-link">
+                    {{isLangAr? "EN":"AR"}}
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
